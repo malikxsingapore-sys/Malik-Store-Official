@@ -1,6 +1,6 @@
 const defaults=[
 {id:1,name:"7000 Diamonds",price:1000},{id:2,name:"10000 Diamonds",price:1500},{id:3,name:"30000 Diamonds",price:4000},
-{id:4,name:"40000 Diamonds",price:5000},{id:5,name:"60000 Diamonds",price:6000},{id:6,name:"800000 Diamonds",price:8000}
+{id:4,name:"40000 Diamonds",price:5000},{id:5,name:"60000 Diamonds",price:6000},{id:6,name:"80000 Diamonds",price:8000}
 ];
 let products=JSON.parse(localStorage.getItem("malikProducts")||"null")||defaults;
 function money(n){return "PKR "+Number(n).toLocaleString()}
