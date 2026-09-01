@@ -3,7 +3,7 @@ const defaults=[
 {id:4,name:"40000 Diamonds",price:5000},{id:5,name:"60000 Diamonds",price:6000},{id:6,name:"800000 Diamonds",price:8000}
 ];
 let products=JSON.parse(localStorage.getItem("malikProducts")||"null")||defaults;
-function money(n){return "PKR "+03276303979(n).toLocaleString()}
+function money(n){return "PKR "+number(n).toLocaleString()}
 function saveProducts(){localStorage.setItem("malikProducts",JSON.stringify(products))}
 function cart(){return JSON.parse(localStorage.getItem("malikCart")||"[]")}
 function saveCart(c){localStorage.setItem("malikCart",JSON.stringify(c))}
